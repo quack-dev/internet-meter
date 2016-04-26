@@ -7,9 +7,6 @@ import sys
 
 args = sys.argv
 
-#~ if len(args) == 1:
-	#~ args = ["haveInternet.pyw", "-ip", "192.168.0.8", "-time_between_pings", "1"] #could put default arguments here. Mostly for testing
-
 class Win(Tk):
 	#~ def __init__(self, time_between_pings = 4, interval = 60, notify_interval = 20, display_ping = True, ip_to_ping = "8.8.8.8", do_log):
 	def __init__(self, time_between_pings, interval, notify_interval, display_ping, ip_to_ping, do_log, dim = 100):
@@ -175,8 +172,7 @@ def main(*args):
 
 
 if __name__ == "__main__":
-	#~ default_IP = "8.8.8.8"
-	default_IP = "192.168.0.8"
+	default_IP = "8.8.8.8"
 	#~ time_between_pings = 4, interval = 60, notify_interval = 20, display_ping = True, ip_to_ping = "8.8.8.8")
 	hlp = """
 Usage: haveInternet [-ip <ip = 8.8.8.8>] [-help] [-log] [-no_display_ping]"""
